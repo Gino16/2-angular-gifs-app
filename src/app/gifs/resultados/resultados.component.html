@@ -1,6 +1,11 @@
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, labore
-  optio. Tempore odio ullam ex ipsum dolorum, esse ea! Cumque quisquam sit
-  reprehenderit obcaecati quidem est adipisci tempore voluptate, dicta nam,
-  consectetur voluptatibus. Adipisci expedita accusamus deleniti non,
-  dignissimos placeat ratione voluptatum ducimus esse? Maxime, nam. Provident
-  minus officiis aliquid?</p>
+<div class="row">
+  <div *ngFor="let gif of resultados" class="col-md-4 col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <p class="card-text">
+          <img class="img-thumbnail" [src]="gif.images.downsized_medium.url" [alt]="gif.title">
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
