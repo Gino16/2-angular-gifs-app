@@ -2,7 +2,7 @@
   <div *ngFor="let gif of resultados" class="col-md-4 col-sm-6">
     <div class="card">
       <div class="card-body">
-        <img class="img-thumbnail" [src]="gif.images.downsized_medium.url" [alt]="gif.title">
+        <img class="img-thumbnail animate__animated animate__fadeInLeft" [src]="gif.images.downsized_medium.url" [alt]="gif.title">
         <p class="card-text">
           {{gif.title}}
         </p>
